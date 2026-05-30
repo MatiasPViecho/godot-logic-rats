@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ciryo5qnkxbxo"]
+
+[ext_resource type="PackedScene" uid="uid://cp6f7cem16b0f" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dk2kafich7hfa" path="res://interactable.tscn" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bd5omjtesynaw" path="res://art/button.jpg" id="3_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=1608717]
+
+[node name="Player" parent="." unique_id=711099720 instance=ExtResource("1_ig7tw")]
+position = Vector2(217, 191)
+
+[node name="Interactable" parent="." unique_id=2143764827 instance=ExtResource("2_0xm2m")]
+position = Vector2(825, 412)
+
+[node name="Sprite2D" type="Sprite2D" parent="Interactable" unique_id=236293024]
+texture = ExtResource("3_h2yge")
